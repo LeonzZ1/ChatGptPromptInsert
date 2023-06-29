@@ -38,10 +38,8 @@ const insertText = (text) => {
       container.style.gap = '5px';
       container.style.marginTop = '5px';
       // Add buttons to the container.
-      container.appendChild(addButton('Summarize','Summarize the following text in English: '));
-      container.appendChild(addButton('Translate','If the following text is in English, translate it into Italian, and if in Italian, then into English: '));
-      container.appendChild(addButton('Poem','Create a poem based on the following text: '));
-      container.appendChild(addButton('Response','My name is Ilya, think of what to answer me in this dialogue: '));
+      container.appendChild(addButton('Rewrite','I want you to act as a professional reviewer for academic journal. I will speak to you in any language and you will detect the language, translate it and answer in the corrected and improved version of my text, in English. I want you to rewrite my simplified A0-level words and sentences with more academic,  upper level English words and sentences. Keep the meaning same, but make them more suitable for native English speakers to read. I want you to only reply the correction, the improvements and nothing else, do not write explanations. '));
+      container.appendChild(addButton('Translate','I want you to act as an English translator, spelling corrector and improver. I will speak to you in any language and you will detect the language, translate it and answer in the corrected and improved version of my text, in Chinese. I want you to only reply the correction, the improvements and nothing else, do not write explanations.'));
       // Add the container below the textarea.
       textarea.parentNode.insertBefore(container, textarea.nextSibling);
     }
